@@ -7,6 +7,15 @@ description: |
   ideas or which stocks look strong for the next session.
 ---
 
+## Instructions
+
+Invoking this skill on its own (no question attached) only loads the rules
+below into context — do not start researching or producing a watchlist yet.
+Wait for the user to ask a specific question (e.g. "what looks strong for
+tomorrow?", "check on VEDL", "any order-win stocks today?") before doing any
+research. Answer only what was asked — don't default to a full 10-stock
+watchlist unless the user asks for one.
+
 ## Sources
 
 Use in this priority order:
@@ -53,7 +62,9 @@ List exactly 10 stocks unless fewer than 10 meet the bar — never pad with weak
 
 ## Save Results
 
-After presenting the output, write the same table + summary to `picks/YYYY-MM-DD.md` (create the `picks/` folder if missing). This creates a dated record for later comparison against actual performance.
+Only if the user asks to save/record the list: write the table + summary to
+`picks/YYYY-MM-DD.md` (create the `picks/` folder if missing), for later
+comparison against actual performance. Do not save automatically.
 
 ## Disclaimer
 
