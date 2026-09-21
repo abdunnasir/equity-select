@@ -48,6 +48,14 @@ Always separate confirmed exchange filings from media speculation.
 | Technical | Chart-pattern based, no fundamental news trigger |
 | Speculative | Rumor, social media, or unverified — flag clearly, use sparingly |
 
+## Filters (apply before finalizing the 10)
+
+- **Freshness**: exclude/downweight stocks that already moved >3% on the trigger day — the pop may already be priced in.
+- **Dedup correlated bets**: same theme/group (e.g. one sector rally, one analyst note covering multiple names) counts as one slot, not one-per-ticker.
+- **Fundamentals hard-filter**: P/E >50x or ROE <15% → exclude, or include only with an explicit risk note and smaller implied conviction.
+- **Order-news by surprise**: weigh order value against company market cap/expectations, not absolute ₹cr size.
+- **Technical/sector-only picks need stock-specific confirmation** (e.g. volume spike on that ticker) — index-level strength alone isn't enough.
+
 ## Output
 
 ```markdown
